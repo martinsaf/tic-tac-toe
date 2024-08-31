@@ -7,7 +7,7 @@ function LeaderboardPage() {
   const { winner } = location.state || { winner: "Unknown" };
 
   const goToStart = () => {
-    navigate("/start"); // useNavigate em vez de useHistory
+    navigate("/start"); 
   };
 
   return (
