@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./StartPage.css"; // Certifique-se de que este import está correto e que o caminho é válido
-
+import "./StartPage.css"; 
 function StartPage() {
   const [player1, setPlayer1] = useState("");
   const [player2, setPlayer2] = useState("");
@@ -12,7 +11,6 @@ function StartPage() {
     navigate("/game", { state: { player1, player2, victoryCondition } });
   };
 
-  // Aplicando a classe .start ao container principal
   return (
     <div className="start">
       <h1>Start Page - Tic Tac Toe</h1>
