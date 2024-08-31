@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize");
 require("dotenv").config();
 
-// Configuração da conexão com o banco de dados
+// Configuring the Database Connection
 const sequelize = new Sequelize(
   process.env.DB_NAME,
   process.env.DB_USER,
@@ -9,7 +9,7 @@ const sequelize = new Sequelize(
   {
     host: "localhost",
     dialect: "mysql",
-    logging: false, // Desabilita logs SQL no console
+    logging: false, // Disables SQL logs in the console
     pool: {
       max: 5,
       min: 0,
@@ -33,7 +33,7 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
-// Importação dos modelos
+// Importing the models
 db.players = require("./player")(sequelize, Sequelize);
 db.games = require("./game")(sequelize, Sequelize);
 
