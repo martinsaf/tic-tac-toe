@@ -28,8 +28,8 @@ function GamePage() {
         setBoard(emptyBoard);
       }
     } else if (!board.includes(null)) {
-      // Verifica empate
-      setBoard(emptyBoard); // Reset sem mudar o score para empate
+      // check draw
+      setBoard(emptyBoard); // Reset without changing the score
     } else {
       setCurrentPlayer(currentPlayer === player1 ? player2 : player1);
     }
@@ -62,7 +62,7 @@ function GamePage() {
       ...prevScore,
       [player]: prevScore[player] + 1,
     }));
-    setWinner(null); // Limpa o vencedor para o próximo jogo
+    setWinner(null); // Cleans winner for the next game
   };
 
   const handleCellClick = (index) => {
