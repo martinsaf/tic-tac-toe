@@ -18,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     winnerId: {
       type: DataTypes.INTEGER,
-      allowNull: true, // Pode ser nulo se o jogo resultar em empate
+      allowNull: true, // It may be void if the game results in a draw
       references: {
         model: "Players",
         key: "id",
