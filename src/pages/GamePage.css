@@ -1,0 +1,79 @@
+/* Estilos básicos para a página do jogo */
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Estilização do título e informações dos jogadores */
+h1 {
+  font-size: 48px;
+  color: #333;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.player {
+  font-size: 20px;
+  color: #666;
+}
+
+.active {
+  color: green;
+  font-weight: bold;
+}
+
+/* Estilização do tabuleiro */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px); /* Define 3 colunas */
+  grid-gap: 10px;
+  justify-content: center;
+  margin: auto;
+}
+
+/* Estilização do tabuleiro na GamePage */
+.cell {
+  width: 100px; /* Largura da célula */
+  height: 100px; /* Altura da célula */
+  background-color: #f0f0f0; /* Cor de fundo da célula */
+  border: 2px solid #ddd; /* Borda da célula */
+  font-size: 24px; /* Tamanho da fonte dentro da célula */
+  color: #333; /* Cor do texto dentro da célula */
+  cursor: pointer; /* Cursor como ponteiro para indicar interatividade */
+}
+.cell:hover {
+  color: #333; /* Garanta que a cor do texto durante o hover seja visível */
+}
+
+/* Mensagem de vitória */
+.winner-message {
+  margin-top: 20px;
+  font-size: 24px;
+  color: green;
+}
+
+.winner-message button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.winner-message button:hover {
+  background-color: #45a049;
+}

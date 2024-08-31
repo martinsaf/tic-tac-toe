@@ -1,0 +1,42 @@
+/* Estilos básicos para a página de início */
+.start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  margin: 0 auto;
+  width: 100%;
+}
+
+h1 {
+  font-size: 48px; /* Aumenta o tamanho da fonte */
+  color: #b8e994; /* Cor verde clara */
+  text-shadow: 2px 2px 4px #6a3093; /* Sombra roxa para dar profundidade */
+}
+
+/* Estilização dos inputs e seleção */
+input[type="text"],
+select {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  width: 200px; /* Largura padrão para inputs */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #45a049;
+}

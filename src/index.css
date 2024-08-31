@@ -1,0 +1,48 @@
+/* Reset CSS básico e centralização global com tema escuro */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282828; /* Cor de fundo escura mais suave */
+  color: #b8e994; /* Verde claro para o texto */
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+input,
+select,
+button {
+  background-color: #6a3093; /* Roxo para inputs e botões */
+  color: #b8e994; /* Verde claro para texto em inputs e botões */
+  border: 1px solid #9575cd; /* Borda roxa clara para inputs e botões */
+}
+
+button:hover,
+input[type="text"]:hover,
+select:hover {
+  background-color: #9575cd; /* Roxo mais claro para hover */
+  border-color: #b39ddb; /* Borda mais clara para destaque em hover */
+}
+
+input:focus,
+select:focus,
+button:focus {
+  outline: none;
+  border-color: #cddc39; /* Verde limão para foco */
+}
+
+/* Estilos adicionais para manter o tema escuro consistente */
+.cell:hover {
+  background-color: #333333; /* Cinza escuro para hover em células */
+}
+
+.winner-message {
+  color: #cddc39; /* Verde limão para mensagem de vitória */
+}
