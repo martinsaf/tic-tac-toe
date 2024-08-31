@@ -1,4 +1,4 @@
-Tic Tac Toe Game
+Tic Tac Toe Game ~~~ NOT FINISHED BUT PLAYABLE
 
 This repository contains a Tic Tac Toe game project implemented in React. The game allows two players (Player 1 and Player 2) to compete against each other on a 3x3 board, alternating between "X" and "O". The project demonstrates the use of React Hooks, state management, and component navigation using react-router-dom.
 
