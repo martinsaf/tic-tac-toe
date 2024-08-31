@@ -1,4 +1,4 @@
-/* Reset CSS básico e centralização global com tema escuro */
+/* Basic CSS and global centering with dark theme */
 html,
 body {
   margin: 0;
@@ -8,8 +8,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #282828; /* Cor de fundo escura mais suave */
-  color: #b8e994; /* Verde claro para o texto */
+  background-color: #282828; /* Softer dark background color */
+  color: #b8e994; /* Light green for text */
 }
 
 body {
@@ -19,30 +19,30 @@ body {
 input,
 select,
 button {
-  background-color: #6a3093; /* Roxo para inputs e botões */
-  color: #b8e994; /* Verde claro para texto em inputs e botões */
-  border: 1px solid #9575cd; /* Borda roxa clara para inputs e botões */
+  background-color: #6a3093; /* Purple for inputs and buttons */
+  color: #b8e994; /* Light green for text on inputs and buttons */
+  border: 1px solid #9575cd; /* Light purple border for inputs and buttons */
 }
 
 button:hover,
 input[type="text"]:hover,
 select:hover {
-  background-color: #9575cd; /* Roxo mais claro para hover */
-  border-color: #b39ddb; /* Borda mais clara para destaque em hover */
+  background-color: #9575cd; /* Lighter purple for hover */
+  border-color: #b39ddb; /* Lighter edge for hover highlight */
 }
 
 input:focus,
 select:focus,
 button:focus {
   outline: none;
-  border-color: #cddc39; /* Verde limão para foco */
+  border-color: #cddc39; /* Lime Green for Focus */
 }
 
-/* Estilos adicionais para manter o tema escuro consistente */
+/* Additional styles to keep the dark theme consistent */
 .cell:hover {
-  background-color: #333333; /* Cinza escuro para hover em células */
+  background-color: #333333; /* Dark gray for hover in cells */
 }
 
 .winner-message {
-  color: #cddc39; /* Verde limão para mensagem de vitória */
+  color: #cddc39; /* Lime Green for Victory Message */
 }
